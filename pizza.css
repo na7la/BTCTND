@@ -1,0 +1,63 @@
+/* Pizza page CSS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: figtree, sans-serif;
+  line-height: 1.618;
+  margin: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+.box {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+.box h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.value {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+#btcValue,
+#pizzaCount {
+  font-size: 1.5em;
+  transition: color 0.5s ease, transform 0.3s ease;
+}
+
+/* Animation d'agrandissement temporaire lors de la mise à jour */
+.update-animation {
+  animation: scaleUp 0.5s ease;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
